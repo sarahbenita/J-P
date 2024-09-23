@@ -19,3 +19,9 @@ h1, h2, h3 {
 a {
   text-decoration: none;
 }
+.banner {
+  background-image: url(images/background-2.webp);   
+  /* 2. Make the background image cover the banner div */
+  background-size: cover;     
+  background-position: center;
+}
