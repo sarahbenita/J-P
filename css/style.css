@@ -27,7 +27,15 @@ a:hover {
   color: powderblue;
   text-decoration: none;
 }
-
+.logo img {
+    height: 150px; 
+    margin-right: 20px; 
+}
+.container {
+    max-width: 1200px; /* Ajuste la largeur selon tes besoins */
+    margin: 0 auto; /* Centre le conteneur */
+    padding: 0 20px; /* Espacement intérieur */
+}
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
   .container {
