@@ -8,6 +8,7 @@
   display: flex;
   align-items: center; /* Aligne verticalement le contenu */
   justify-content: space-between; /* Espace entre le logo et le texte */
+  flex-direction: column;
 }
 .banner h1 {
   color: white;

@@ -1,11 +1,19 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: ;
+}
 .card {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 	padding: 20px;
   flex-basis: 250px;
   flex-grow: 1;
   margin: 10px;
+  background-color: gray;
+  width: 100%;
 }
 .card img {
   width: 150px;
@@ -13,8 +21,4 @@
 .card h3 {
   flex-grow: 1;
   padding-left: 20px;
-}
-.cards {
-  display: flex;
-  flex-wrap: wrap;
 }
