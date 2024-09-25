@@ -6,6 +6,7 @@
 @import url("components/banner.css");
 @import url("components/button.css");
 @import url("components/card.css");
+@import url("components/navbar.css");
 
 
 /* General style rules for fonts and colors */
@@ -31,10 +32,13 @@ a:hover {
     height: 150px; 
     margin-right: 20px; 
 }
+
+
+/*Description de l'utilisation de l'écran selon la dimension disponible*/
 .container {
-    max-width: 1200px; /* Ajuste la largeur selon tes besoins */
-    margin: 0 auto; /* Centre le conteneur */
-    padding: 0 20px; /* Espacement intérieur */
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px;
 }
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
