@@ -1,0 +1,32 @@
+.footer {
+  background-color: #f8f9fa; /* Couleur de fond claire */
+  padding: 20px 0;
+  text-align: center; /* Centre le texte */
+  border-top: 1px solid #e9ecef; /* Légende de séparation */
+}
+
+.footer .container {
+  max-width: 1200px; /* Largeur maximale pour le conteneur */
+  margin: 0 auto; /* Centre le conteneur */
+  padding: 0 20px; /* Espacement intérieur */
+}
+
+.footer-links, .footer-contact, .footer-social {
+  margin: 10px 0; /* Espacement vertical */
+}
+
+.footer a {
+  color: steelblue;
+  text-decoration: none;
+  margin: 0 15px; /* Espacement entre les liens */
+}
+
+.footer a:hover {
+  color: powderblue; /* Couleur au survol */
+}
+
+.footer-copy {
+  margin-top: 10px; /* Espacement supérieur */
+  font-size: 14px; /* Taille de police réduite */
+  color: #6c757d; /* Couleur du texte pour le copyright */
+}
