@@ -17,6 +17,11 @@
   height: 400px;
   background-size: cover;
   border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease; 
+}
+.card:hover {
+    transform: translateY(-5px); /* Légère animation de montée */
 }
 .card img {
   width: 150px;
