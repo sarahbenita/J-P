@@ -35,6 +35,93 @@ a:hover {
 }
 
 
+
+/* Styles pour l'introduction */
+.intro {
+  padding: 40px 20px;
+  background-color: #f0f8ff; 
+  text-align: center;
+}
+.intro h2 {
+  color: steelblue;
+  margin-bottom: 20px;
+}
+.intro p {
+  font-size: 18px;
+  color: #333; 
+}
+
+
+
+/* Styles pour les témoignages */
+.testimonials {
+  padding: 40px 20px;
+  background-color: #fff; 
+  text-align: center;
+}
+.testimonials h2 {
+  color: steelblue;
+  margin-bottom: 20px;
+}
+.testimonials blockquote {
+  font-style: italic;
+  margin: 20px auto;
+  max-width: 600px; 
+  color: #555; 
+}
+
+
+
+/* Styles pour les fonctionnalités */
+.features {
+  padding: 40px 20px;
+  background-color: #f0f8ff; 
+  text-align: center;
+}
+.features h2 {
+  color: steelblue;
+  margin-bottom: 20px;
+}
+.features ul {
+  list-style: none;
+  padding: 0; 
+}
+.features li {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+
+
+/* Styles pour la section blog */
+.blog {
+  padding: 40px 20px;
+  background-color: #f0f8ff; 
+  text-align: center;
+}
+.blog h2 {
+  color: steelblue;
+  margin-bottom: 20px;
+}
+.blog ul {
+  list-style: none;
+  padding: 0; 
+}
+.blog li {
+  font-size: 18px; 
+  margin: 10px; 
+}
+.blog a {
+  color: steelblue;
+  text-decoration: underline; 
+}
+.blog a:hover {
+  color: powderblue; 
+}
+
+
+
 /*Description de l'utilisation de l'écran selon la dimension disponible*/
 .container {
     max-width: 90%; 
