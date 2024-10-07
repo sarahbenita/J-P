@@ -9,12 +9,23 @@
 @import url("components/navbar.css");
 @import url("components/footer.css");
 
+/* Couleurs de base */
+:root {
+  --dark-gray: #23292E; /* Gris très foncé */
+  --dark-blue-green: #1A2427; /* Bleu-vert très sombre */
+  --light-turquoise: #7ADAC5; /* Turquoise clair */
+  --dark-teal: #0A8780; /* Vert canard */
+  --medium-gray: #838883; /* Gris moyen */
+  --light-gray: #DFE3DE; /* Gris très clair */
+}
 
 /* General style rules for fonts and colors */
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   margin: 0px;
+  background-color: var(--dark-gray);
+  color: var(--light-gray);
 }
 h1, h2, h3 {
   font-family: 'Roboto', sans-serif;

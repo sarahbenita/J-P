@@ -7,6 +7,8 @@
     align-items: center;
     position: fixed;
     width: 100%;
+    background-color: var(--dark-blue-green);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .navbar ul {
@@ -20,11 +22,11 @@
 }
 
 .navbar a {
-    color: steelblue;
+    color: var(--light-turquoise);
     text-decoration: none;
     font-weight: bold;
 }
 
 .navbar a:hover {
-    color: powderblue;
+    color: var(--dark-teal);
 }

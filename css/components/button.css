@@ -1,14 +1,14 @@
 .btn-blue, .button-blue {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
+    background-color: var(--light-turquoise);
+    color: var(--dark-gray);
+    padding: 15px 30px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s;
 }
 
 .btn-blue:hover, .button-blue:hover {
-    background-color: powderblue;
+    background-color: var(--dark-teal);
 }
