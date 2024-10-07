@@ -51,6 +51,7 @@ a:hover {
 /* Styles pour l'introduction */
 .intro {
   padding: 40px 20px;
+  margin-top: 30px;
   background-color: #f9f9f9; 
   text-align: center;
 }
