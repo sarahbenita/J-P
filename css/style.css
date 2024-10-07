@@ -30,14 +30,15 @@ body {
 h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
+  color: var(--light-turquoise)
 }
 a {
-  color: #007BFF;
+  color: var(--light-turquoise);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 a:hover {
-  color: #0056b3;
+  color: var(--light-gray);
   text-decoration: none;
 }
 .logo img {
