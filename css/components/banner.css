@@ -11,14 +11,27 @@
   flex-direction: column;
   height: 60vh;
 }
+
 .banner h1 {
   color: white;
   font-size: 50px;
 }
+
 .banner h2 {
   color: white;
   font-size: 30px;
   font-weight: lighter;
   opacity: 0.8;
   margin-bottom: 40px;
+}
+
+.baseline {
+  z-index: 110;
+  position: relative;
+  transition: top 0.3s ease;
+}
+
+.fixed {
+    position: fixed;
+    top: 10px; /* 10px du haut de la navbar */
 }

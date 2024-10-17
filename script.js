@@ -6,10 +6,21 @@ dropdownToggle.addEventListener('click', function(event) {
     dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block'; // Alterne l'affichage du sous-menu
 });
 
-// Fermer le menu si l'utilisateur clique en dehors
-document.addEventListener('click', function(event) {
-    if (!dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
-        dropdownMenu.style.display = 'none'; // Ferme le sous-menu
+const baseline = document.querySelector('.baseline');
+const navbar = document.querySelector('.navbar');
+//const navbarHeight = 230;//navbar.offsetHeight; // Hauteur de la navbar
+
+// Récupère la position de l'élément par rapport au haut de l'écran
+const rect = baseline.getBoundingClientRect();
+const distanceFromTop = rect.top; // Hauteur par rapport au haut de l'écran
+
+
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY; // Position de défilement actuelle
+
+    if (scrollY > distanceFromTop-20) {
+        baseline.classList.add('fixed'); // Ajoute la classe fixe
+    } else {
+        baseline.classList.remove('fixed'); // Retire la classe fixe
     }
 });
-

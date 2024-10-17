@@ -9,15 +9,7 @@
     width: 100%;
     background-color: var(--dark-blue-green);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.dropdown-menu {
-    display: none; /* Masque le sous-menu par défaut */
-    position: absolute; /* Positionne le sous-menu */
-    background-color: var(--dark-blue-green); /* Couleur de fond du sous-menu */
-    border-radius: 5px; /* Arrondir les coins */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre pour le sous-menu */
-    z-index: 10; /* Assure que le menu est au-dessus des autres éléments */
+    z-index: 100;
 }
 
 .navbar ul {
@@ -43,6 +35,20 @@
 
 .navbar a:hover {
     color: var(--dark-teal);
+}
+
+.navbar ul li ul {
+    display: none;
+    padding-left : 5px;
+}
+
+.dropdown-menu {
+    display: none; /* Masque le sous-menu par défaut */
+    position: absolute; /* Positionne le sous-menu */
+    background-color: var(--dark-blue-green); /* Couleur de fond du sous-menu */
+    border-radius: 5px; /* Arrondir les coins */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre pour le sous-menu */
+    z-index: 10; /* Assure que le menu est au-dessus des autres éléments */
 }
 
 .dropdown-menu li {
