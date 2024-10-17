@@ -11,6 +11,15 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+.dropdown-menu {
+    display: none; /* Masque le sous-menu par défaut */
+    position: absolute; /* Positionne le sous-menu */
+    background-color: var(--dark-blue-green); /* Couleur de fond du sous-menu */
+    border-radius: 5px; /* Arrondir les coins */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre pour le sous-menu */
+    z-index: 10; /* Assure que le menu est au-dessus des autres éléments */
+}
+
 .navbar ul {
     list-style: none;
     display: flex;
@@ -19,6 +28,11 @@
 
 .navbar li {
     margin: 0 15px; /* Espacement entre les éléments */
+    position: relative;
+}
+
+.navbar li:hover .dropdown-menu {
+    display: block; /* Affiche le sous-menu au survol */
 }
 
 .navbar a {
@@ -29,4 +43,19 @@
 
 .navbar a:hover {
     color: var(--dark-teal);
+}
+
+.dropdown-menu li {
+    margin: 0; /* Aucun espacement entre les éléments */
+}
+
+.dropdown-menu a {
+    padding: 10px 15px; /* Espacement intérieur pour les liens */
+    color: var(--light-gray); /* Couleur du texte du sous-menu */
+    text-decoration: none; /* Pas de soulignement */
+    display: block; /* Prend toute la largeur */
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--light-turquoise); /* Couleur au survol du sous-menu */
 }
