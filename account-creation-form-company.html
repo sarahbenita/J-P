@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Inscription Entreprise</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="images/logo2.png" alt="Logo"/>
+            </a>
+            <ul>
+                <li>
+                    <a>Le concept</a>
+                    <ul class="dropdown-menu dropdown-toggle">
+                        <li><a href="chercheur.html">Chercheur d'emploi</a></li>
+                        <li><a href="recruteur.html">Entreprise</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <form action="/submit-company-form" method="POST">
+                <h2>Inscription pour les Entreprises</h2>
+                <!-- Informations Légales -->
+                <div>
+                    <label for="companyName">Raison Sociale:</label>
+                    <input type="text" id="companyName" name="companyName" required>
+                </div>
+                <div>
+                    <label for="idNumber">Numéro d’Identification:</label>
+                    <input type="text" id="idNumber" name="idNumber" required>
+                </div>
+                <div>
+                    <label for="legalAddress">Adresse Légale:</label>
+                    <input type="text" id="legalAddress" name="legalAddress" required>
+                </div>
+                <div>
+                    <label for="activitySector">Secteur d'Activité:</label>
+                    <input type="text" id="activitySector" name="activitySector">
+                </div>
+                <!-- Détails du Compte -->
+                <div>
+                    <label for="username">Nom d'Utilisateur:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div>
+                    <label for="password">Mot de Passe:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div>
+                    <label for="confirmPassword">Confirmez le Mot de Passe:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <!-- Informations de Contact -->
+                <div>
+                    <label for="contactName">Nom du Contact Principal:</label>
+                    <input type="text" id="contactName" name="contactName" required>
+                </div>
+                <div>
+                    <label for="contactEmail">E-mail du Contact Principal:</label>
+                    <input type="email" id="contactEmail" name="contactEmail" required>
+                </div>
+                <div>
+                    <label for="contactPhone">Téléphone du Contact Principal:</label>
+                    <input type="tel" id="contactPhone" name="contactPhone">
+                </div>
+                <!-- Acceptation des CGU et Soumission -->
+                <div>
+                    <label>
+                        <input type="checkbox" name="terms" required>
+                        J'accepte les Conditions Générales d’Utilisation
+                    </label>
+                </div>
+                <div>
+                    <button type="submit">Créer le Compte</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

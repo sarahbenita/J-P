@@ -24,3 +24,31 @@ window.addEventListener('scroll', () => {
         baseline.classList.remove('fixed'); // Retire la classe fixe
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function(event) {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirmPassword').value;
+
+        let errorMessages = [];
+
+        if (username.length < 4) {
+            errorMessages.push('Le nom d\'utilisateur doit contenir au moins 4 caractères.');
+        }
+
+        if (password.length < 8) {
+            errorMessages.push('Le mot de passe doit contenir au moins 8 caractères.');
+        }
+
+        if (password !== confirmPassword) {
+            errorMessages.push('Les mots de passe ne correspondent pas.');
+        }
+
+        if (errorMessages.length > 0) {
+            event.preventDefault();
+            alert(errorMessages.join('\n'));
+        }
+    });
+});
