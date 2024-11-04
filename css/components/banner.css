@@ -24,14 +24,15 @@
   opacity: 0.8;
   margin-bottom: 40px;
 }
+@media (min-width: 960px) {
+  .baseline {
+    z-index: 110;
+    position: relative;
+    transition: top 0.3s ease;
+  }
 
-.baseline {
-  z-index: 110;
-  position: relative;
-  transition: top 0.3s ease;
-}
-
-.fixed {
-    position: fixed;
-    top: 10px; /* 10px du haut de la navbar */
+  .fixed {
+      position: fixed;
+      top: 10px; /* 10px du haut de la navbar */
+  }
 }
